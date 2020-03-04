@@ -10,7 +10,10 @@
     $(document).ready(function(){
 
         $('img').click(function() {
-            ('src').replace()
+            let source = $(this).attr('data-alt-src')
+            let alt = $(this).attr('src')
+            $(this).attr('src', source)
+            $(this).attr('data-alt-src', alt);
         });
     });
     </script>
@@ -29,11 +32,11 @@
 </head>
 <body>
     <main>
-        <img src="NinjaGato/cat0.png" data-alt-src="NinjaGato/ninja0">
-        <img src="NinjaGato/cat1.png" data-alt-src="NinjaGato/ninja1">
-        <img src="NinjaGato/cat2.png" data-alt-src="NinjaGato/ninja2">
-        <img src="NinjaGato/cat3.png" data-alt-src="NinjaGato/ninja3">
-        <img src="NinjaGato/cat4.png" data-alt-src="NinjaGato/ninja4">
+        <img src="NinjaGato/cat0.png" data-alt-src="NinjaGato/ninja0.png">
+        <img src="NinjaGato/cat1.png" data-alt-src="NinjaGato/ninja1.png">
+        <img src="NinjaGato/cat2.png" data-alt-src="NinjaGato/ninja2.png">
+        <img src="NinjaGato/cat3.png" data-alt-src="NinjaGato/ninja3.png">
+        <img src="NinjaGato/cat4.png" data-alt-src="NinjaGato/ninja4.png">
     </main>
 </body>
 </html>
